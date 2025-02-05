@@ -51,7 +51,7 @@ prebuilt_platform_compat_config {
 prebuilt_platform_compat_config {
     name: "bluetoothapk-platform-compat-config",
     visibility: ["//visibility:public"],
-    licenses: ["bt-module-sdk_packages_apps_Bluetooth_license"],
+    licenses: ["bt-module-sdk_Android-Apache-2.0"],
     metadata: "compat_configs/bluetoothapk-platform-compat-config/bluetoothapk-platform-compat-config_meta.xml",
 }
 
@@ -65,7 +65,7 @@ prebuilt_platform_compat_config {
 java_sdk_library_import {
     name: "framework-bluetooth",
     visibility: ["//visibility:public"],
-    apex_available: ["com.android.btservices"],
+    apex_available: ["com.android.bt"],
     licenses: ["bt-module-sdk_Android-Apache-2.0"],
     shared_library: false,
     permitted_packages: [
@@ -112,15 +112,6 @@ license {
     visibility: ["//visibility:private"],
     license_kinds: ["SPDX-license-identifier-Apache-2.0"],
     license_text: ["licenses/build/soong/licenses/LICENSE"],
-}
-
-license {
-    name: "bt-module-sdk_packages_apps_Bluetooth_license",
-    visibility: ["//visibility:private"],
-    license_kinds: [
-        "SPDX-license-identifier-Apache-2.0",
-        "SPDX-license-identifier-BSD",
-    ],
 }
 
 prebuilt_systemserverclasspath_fragment {
