@@ -53,9 +53,11 @@ android/bluetooth/BluetoothLeBroadcastSettings
 android/bluetooth/BluetoothLeBroadcastSubgroup
 android/bluetooth/BluetoothLeBroadcastSubgroupSettings
 android/bluetooth/BluetoothLeCall
+android/bluetooth/BluetoothLeCallControl
 android/bluetooth/BluetoothManager
 android/bluetooth/BluetoothMap
 android/bluetooth/BluetoothMapClient
+android/bluetooth/BluetoothMasInstance
 android/bluetooth/BluetoothOutputStream
 android/bluetooth/BluetoothPan
 android/bluetooth/BluetoothPbap
@@ -75,7 +77,6 @@ android/bluetooth/BluetoothVolumeControl
 android/bluetooth/BufferConstraint
 android/bluetooth/BufferConstraints
 android/bluetooth/CallbackWrapper
-android/bluetooth/EncryptionStatus
 android/bluetooth/IAdapter
 android/bluetooth/IAudioInputCallback
 android/bluetooth/IBluetooth
@@ -106,6 +107,8 @@ android/bluetooth/IBluetoothLeAudioCallback
 android/bluetooth/IBluetoothLeBroadcastAssistant
 android/bluetooth/IBluetoothLeBroadcastAssistantCallback
 android/bluetooth/IBluetoothLeBroadcastCallback
+android/bluetooth/IBluetoothLeCallControl
+android/bluetooth/IBluetoothLeCallControlCallback
 android/bluetooth/IBluetoothManager
 android/bluetooth/IBluetoothManagerCallback
 android/bluetooth/IBluetoothMap
@@ -117,7 +120,6 @@ android/bluetooth/IBluetoothPanCallback
 android/bluetooth/IBluetoothPbap
 android/bluetooth/IBluetoothPbapClient
 android/bluetooth/IBluetoothPreferredAudioProfilesCallback
-android/bluetooth/IBluetoothProfileCallback
 android/bluetooth/IBluetoothProfileServiceConnection
 android/bluetooth/IBluetoothQualityReportReadyCallback
 android/bluetooth/IBluetoothSap
@@ -137,7 +139,6 @@ android/bluetooth/SdpPseRecord
 android/bluetooth/SdpRecord
 android/bluetooth/SdpSapsRecord
 android/bluetooth/SocketMetrics
-android/bluetooth/SystemServiceMessenger
 android/bluetooth/UidTraffic
 android/bluetooth/le/**
 com/android/bluetooth/**
