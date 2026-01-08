@@ -21,8 +21,8 @@ package android.bluetooth {
     method @Deprecated @RequiresPermission(android.Manifest.permission.BLUETOOTH_CONNECT) public boolean disable();
     method @Deprecated @RequiresPermission(android.Manifest.permission.BLUETOOTH_CONNECT) public boolean enable();
     method @RequiresPermission(allOf={android.Manifest.permission.BLUETOOTH_CONNECT, android.Manifest.permission.LOCAL_MAC_ADDRESS}) public String getAddress();
-    method @Nullable public android.bluetooth.le.BluetoothLeAdvertiser getBluetoothLeAdvertiser();
-    method @Nullable public android.bluetooth.le.BluetoothLeScanner getBluetoothLeScanner();
+    method public android.bluetooth.le.BluetoothLeAdvertiser getBluetoothLeAdvertiser();
+    method public android.bluetooth.le.BluetoothLeScanner getBluetoothLeScanner();
     method @RequiresPermission(android.Manifest.permission.BLUETOOTH_CONNECT) public java.util.Set<android.bluetooth.BluetoothDevice> getBondedDevices();
     method @Deprecated public static android.bluetooth.BluetoothAdapter getDefaultAdapter();
     method @Nullable @RequiresPermission(android.Manifest.permission.BLUETOOTH_SCAN) public java.time.Duration getDiscoverableTimeout();
@@ -55,8 +55,8 @@ package android.bluetooth {
     method @NonNull @RequiresPermission(allOf={android.Manifest.permission.BLUETOOTH_CONNECT, android.Manifest.permission.BLUETOOTH_PRIVILEGED}, conditional=true) public android.bluetooth.BluetoothServerSocket listenUsingSocketSettings(@NonNull android.bluetooth.BluetoothSocketSettings) throws java.io.IOException;
     method @RequiresPermission(android.Manifest.permission.BLUETOOTH_CONNECT) public boolean setName(String);
     method @RequiresPermission(android.Manifest.permission.BLUETOOTH_SCAN) public boolean startDiscovery();
-    method @Deprecated @RequiresPermission(allOf={android.Manifest.permission.BLUETOOTH_PRIVILEGED, android.Manifest.permission.BLUETOOTH_SCAN}, conditional=true) public boolean startLeScan(android.bluetooth.BluetoothAdapter.LeScanCallback);
-    method @Deprecated @RequiresPermission(allOf={android.Manifest.permission.BLUETOOTH_PRIVILEGED, android.Manifest.permission.BLUETOOTH_SCAN}, conditional=true) public boolean startLeScan(java.util.UUID[], android.bluetooth.BluetoothAdapter.LeScanCallback);
+    method @Deprecated @RequiresPermission(android.Manifest.permission.BLUETOOTH_SCAN) public boolean startLeScan(android.bluetooth.BluetoothAdapter.LeScanCallback);
+    method @Deprecated @RequiresPermission(android.Manifest.permission.BLUETOOTH_SCAN) public boolean startLeScan(java.util.UUID[], android.bluetooth.BluetoothAdapter.LeScanCallback);
     method @Deprecated @RequiresPermission(android.Manifest.permission.BLUETOOTH_SCAN) public void stopLeScan(android.bluetooth.BluetoothAdapter.LeScanCallback);
     field @RequiresPermission(android.Manifest.permission.BLUETOOTH_CONNECT) public static final String ACTION_CONNECTION_STATE_CHANGED = "android.bluetooth.adapter.action.CONNECTION_STATE_CHANGED";
     field @RequiresPermission(android.Manifest.permission.BLUETOOTH_SCAN) public static final String ACTION_DISCOVERY_FINISHED = "android.bluetooth.adapter.action.DISCOVERY_FINISHED";
@@ -793,7 +793,7 @@ package android.bluetooth {
     method @RequiresPermission(android.Manifest.permission.BLUETOOTH_CONNECT) public int notifyCharacteristicChanged(@NonNull android.bluetooth.BluetoothDevice, @NonNull android.bluetooth.BluetoothGattCharacteristic, boolean, @NonNull byte[]);
     method @RequiresPermission(android.Manifest.permission.BLUETOOTH_CONNECT) public void readPhy(android.bluetooth.BluetoothDevice);
     method @RequiresPermission(android.Manifest.permission.BLUETOOTH_CONNECT) public boolean removeService(android.bluetooth.BluetoothGattService);
-    method @RequiresPermission(android.Manifest.permission.BLUETOOTH_CONNECT) public boolean sendResponse(@NonNull android.bluetooth.BluetoothDevice, int, int, int, @Nullable byte[]);
+    method @RequiresPermission(android.Manifest.permission.BLUETOOTH_CONNECT) public boolean sendResponse(android.bluetooth.BluetoothDevice, int, int, int, byte[]);
     method @RequiresPermission(android.Manifest.permission.BLUETOOTH_CONNECT) public void setPreferredPhy(android.bluetooth.BluetoothDevice, int, int, int);
   }
 
@@ -1352,9 +1352,9 @@ package android.bluetooth.le {
 
   public final class BluetoothLeScanner {
     method @RequiresPermission(android.Manifest.permission.BLUETOOTH_SCAN) public void flushPendingScanResults(android.bluetooth.le.ScanCallback);
-    method @RequiresPermission(allOf={android.Manifest.permission.BLUETOOTH_PRIVILEGED, android.Manifest.permission.BLUETOOTH_SCAN}, conditional=true) public void startScan(android.bluetooth.le.ScanCallback);
-    method @RequiresPermission(allOf={android.Manifest.permission.BLUETOOTH_PRIVILEGED, android.Manifest.permission.BLUETOOTH_SCAN}, conditional=true) public void startScan(java.util.List<android.bluetooth.le.ScanFilter>, android.bluetooth.le.ScanSettings, android.bluetooth.le.ScanCallback);
-    method @RequiresPermission(allOf={android.Manifest.permission.BLUETOOTH_PRIVILEGED, android.Manifest.permission.BLUETOOTH_SCAN}, conditional=true) public int startScan(@Nullable java.util.List<android.bluetooth.le.ScanFilter>, @Nullable android.bluetooth.le.ScanSettings, @NonNull android.app.PendingIntent);
+    method @RequiresPermission(android.Manifest.permission.BLUETOOTH_SCAN) public void startScan(android.bluetooth.le.ScanCallback);
+    method @RequiresPermission(android.Manifest.permission.BLUETOOTH_SCAN) public void startScan(java.util.List<android.bluetooth.le.ScanFilter>, android.bluetooth.le.ScanSettings, android.bluetooth.le.ScanCallback);
+    method @RequiresPermission(android.Manifest.permission.BLUETOOTH_SCAN) public int startScan(@Nullable java.util.List<android.bluetooth.le.ScanFilter>, @Nullable android.bluetooth.le.ScanSettings, @NonNull android.app.PendingIntent);
     method @RequiresPermission(android.Manifest.permission.BLUETOOTH_SCAN) public void stopScan(android.bluetooth.le.ScanCallback);
     method @RequiresPermission(android.Manifest.permission.BLUETOOTH_SCAN) public void stopScan(android.app.PendingIntent);
     field public static final String EXTRA_CALLBACK_TYPE = "android.bluetooth.le.extra.CALLBACK_TYPE";
