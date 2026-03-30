@@ -50,6 +50,7 @@ android/bluetooth/BluetoothLeBroadcastChannel
 android/bluetooth/BluetoothLeBroadcastMetadata
 android/bluetooth/BluetoothLeBroadcastReceiveState
 android/bluetooth/BluetoothLeBroadcastSettings
+android/bluetooth/BluetoothLeBroadcastSinkState
 android/bluetooth/BluetoothLeBroadcastSubgroup
 android/bluetooth/BluetoothLeBroadcastSubgroupSettings
 android/bluetooth/BluetoothLeCall
