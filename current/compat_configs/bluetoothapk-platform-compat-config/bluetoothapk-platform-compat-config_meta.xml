@@ -9,4 +9,7 @@
   <compat-change enableSinceTargetSdk="37" id="455594702" name="DONOT_STEAL_AUDIO_ON_GATT_CONN">
     <meta-data definedIn="com.android.bluetooth.ChangeIds" />
   </compat-change>
+  <compat-change enableAfterTargetSdk="37" id="405018553" name="ENFORCE_BLUETOOTH_PRIVILEGED_FOR_HEADSET">
+    <meta-data definedIn="com.android.bluetooth.ChangeIds" />
+  </compat-change>
 </config>
