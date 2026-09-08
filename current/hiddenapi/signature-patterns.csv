@@ -50,7 +50,9 @@ android/bluetooth/BluetoothLeBroadcastChannel
 android/bluetooth/BluetoothLeBroadcastMetadata
 android/bluetooth/BluetoothLeBroadcastReceiveState
 android/bluetooth/BluetoothLeBroadcastSettings
-android/bluetooth/BluetoothLeBroadcastSinkState
+android/bluetooth/BluetoothLeBroadcastSink
+android/bluetooth/BluetoothLeBroadcastSinkSettings
+android/bluetooth/BluetoothLeBroadcastSinkSyncStatus
 android/bluetooth/BluetoothLeBroadcastSubgroup
 android/bluetooth/BluetoothLeBroadcastSubgroupSettings
 android/bluetooth/BluetoothLeCall
@@ -111,6 +113,8 @@ android/bluetooth/IBluetoothLeAudioPeripheralCallback
 android/bluetooth/IBluetoothLeBroadcastAssistant
 android/bluetooth/IBluetoothLeBroadcastAssistantCallback
 android/bluetooth/IBluetoothLeBroadcastCallback
+android/bluetooth/IBluetoothLeBroadcastSink
+android/bluetooth/IBluetoothLeBroadcastSinkCallback
 android/bluetooth/IBluetoothManager
 android/bluetooth/IBluetoothManagerCallback
 android/bluetooth/IBluetoothMap
@@ -131,6 +135,7 @@ android/bluetooth/IBluetoothStateChangeCallback
 android/bluetooth/IBluetoothVolumeControl
 android/bluetooth/IBluetoothVolumeControlCallback
 android/bluetooth/IDistanceMeasurement
+android/bluetooth/ILeConnectionCallback
 android/bluetooth/IncomingRfcommSocketInfo
 android/bluetooth/OobData
 android/bluetooth/SdpDipRecord
