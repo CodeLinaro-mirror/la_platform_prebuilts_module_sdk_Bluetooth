@@ -1,4 +1,3 @@
-android/bluetooth/AdapterSuspendCallback
 android/bluetooth/Attributable
 android/bluetooth/AudioInputControl
 android/bluetooth/BluetoothA2dp
@@ -20,9 +19,6 @@ android/bluetooth/BluetoothGatt
 android/bluetooth/BluetoothGattCallback
 android/bluetooth/BluetoothGattCharacteristic
 android/bluetooth/BluetoothGattConnectionSettings
-android/bluetooth/BluetoothGattDatabase
-android/bluetooth/BluetoothGattDatabaseCallback
-android/bluetooth/BluetoothGattDbElement
 android/bluetooth/BluetoothGattDescriptor
 android/bluetooth/BluetoothGattIncludedService
 android/bluetooth/BluetoothGattServer
@@ -87,7 +83,6 @@ android/bluetooth/EncryptionStatus
 android/bluetooth/GattOffloadCapabilities
 android/bluetooth/GattOffloadSession
 android/bluetooth/IAdapter
-android/bluetooth/IAdapterSuspendCallbacks
 android/bluetooth/IAudioInputCallback
 android/bluetooth/IBluetooth
 android/bluetooth/IBluetoothA2dp
@@ -101,7 +96,6 @@ android/bluetooth/IBluetoothCsipSetCoordinatorCallback
 android/bluetooth/IBluetoothCsipSetCoordinatorLockCallback
 android/bluetooth/IBluetoothGatt
 android/bluetooth/IBluetoothGattCallback
-android/bluetooth/IBluetoothGattDatabaseCallback
 android/bluetooth/IBluetoothGattServerCallback
 android/bluetooth/IBluetoothHapClient
 android/bluetooth/IBluetoothHapClientCallback
@@ -138,7 +132,6 @@ android/bluetooth/IBluetoothSap
 android/bluetooth/IBluetoothScan
 android/bluetooth/IBluetoothSocketManager
 android/bluetooth/IBluetoothStateChangeCallback
-android/bluetooth/IBluetoothTakCallback
 android/bluetooth/IBluetoothVolumeControl
 android/bluetooth/IBluetoothVolumeControlCallback
 android/bluetooth/IDistanceMeasurement
@@ -154,7 +147,6 @@ android/bluetooth/SdpRecord
 android/bluetooth/SdpSapsRecord
 android/bluetooth/SocketMetrics
 android/bluetooth/State
-android/bluetooth/TakStatus
 android/bluetooth/UidTraffic
 android/bluetooth/le/**
 com/android/bluetooth/**

@@ -1,17 +1,6 @@
 // Signature format: 2.0
 package android.bluetooth {
 
-  public interface AdapterSuspendCallback {
-    method public void onResumed();
-    method public void onSuspended();
-  }
-
-  public final class BluetoothAdapter {
-    method @RequiresPermission(android.Manifest.permission.BLUETOOTH_PRIVILEGED) public boolean isAdapterSuspendSupported();
-    method @RequiresPermission(android.Manifest.permission.BLUETOOTH_PRIVILEGED) public boolean registerForAdapterSuspendCallbacks(@NonNull java.util.concurrent.Executor, @NonNull android.bluetooth.AdapterSuspendCallback);
-    method @RequiresPermission(android.Manifest.permission.BLUETOOTH_PRIVILEGED) public boolean unregisterForAdapterSuspendCallbacks(@NonNull android.bluetooth.AdapterSuspendCallback);
-  }
-
   public class BluetoothFrameworkInitializer {
     method public static void registerServiceWrappers();
     method public static void setBinderCallsStatsInitializer(@NonNull java.util.function.Consumer<android.content.Context>);
