@@ -1,6 +1,15 @@
 <?xml version='1.0' encoding='utf-8'?>
 <config>
   <compat-change enableSinceTargetSdk="34" id="211757425" name="ENFORCE_CONNECT">
-    <meta-data definedIn="com.android.bluetooth.ChangeIds" sourcePosition="packages/modules/Bluetooth/android/app/change-ids/com/android/bluetooth/ChangeIds.java:28" />
+    <meta-data definedIn="com.android.bluetooth.ChangeIds" />
+  </compat-change>
+  <compat-change enableSinceTargetSdk="37" id="401333807" name="BONDING_APIS_REQUIRE_PRIVILEGED_PERMISSION">
+    <meta-data definedIn="com.android.bluetooth.ChangeIds" />
+  </compat-change>
+  <compat-change enableSinceTargetSdk="37" id="455594702" name="DONOT_STEAL_AUDIO_ON_GATT_CONN">
+    <meta-data definedIn="com.android.bluetooth.ChangeIds" />
+  </compat-change>
+  <compat-change enableAfterTargetSdk="37" id="405018553" name="ENFORCE_BLUETOOTH_PRIVILEGED_FOR_HEADSET">
+    <meta-data definedIn="com.android.bluetooth.ChangeIds" />
   </compat-change>
 </config>
